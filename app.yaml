@@ -1,0 +1,13 @@
+command: [
+  "flask",
+  "--app", 
+  "app_react:flask_app",
+  "run",
+  "--host=0.0.0.0"
+]
+
+env:
+  - name: 'DATABRICKS_HTTP_PATH'
+    value: '<Your Warehouse HTTP Path>'
+  - name: 'DATABRICKS_SERVER_HOSTNAME'
+    value: '<Your Server Hostname>'
